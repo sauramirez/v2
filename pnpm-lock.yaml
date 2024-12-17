@@ -424,8 +424,8 @@ importers:
         specifier: ^4.18.2
         version: 4.18.2
       fast-jwt:
-        specifier: ^3.1.1
-        version: 3.1.1
+        specifier: ^5.0.1
+        version: 5.0.2
       get-port:
         specifier: ^6.1.2
         version: 6.1.2
@@ -566,8 +566,8 @@ importers:
         specifier: ^5.3.1
         version: 5.3.1
       astro-sst:
-        specifier: 2.44.1
-        version: 2.44.1
+        specifier: 2.45.1
+        version: 2.45.1
       async:
         specifier: ^3.2.4
         version: 3.2.4
@@ -3429,6 +3429,10 @@ packages:
   '@leichtgewicht/ip-codec@2.0.4':
     resolution: {integrity: sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==}
 
+  '@lukeed/ms@2.0.2':
+    resolution: {integrity: sha512-9I2Zn6+NJLfaGoz9jN3lpwDgAYvfGeNYdbAIjJOqzs4Tpc+VU3Jqq4IofSUBKajiDS8k9fZIg18/z13mpk1bsA==}
+    engines: {node: '>=8'}
+
   '@manypkg/find-root@1.1.0':
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
 
@@ -5333,8 +5337,8 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
 
-  astro-sst@2.44.1:
-    resolution: {integrity: sha512-Ym+FXdfR8pqSrzp+ekLkbz6NTbGutcyJPWC4Vk6OoLMKTn8HWj3+lDy0C5Dv2nZuqj4lj7Camq7nF4WfGpoGrA==}
+  astro-sst@2.45.1:
+    resolution: {integrity: sha512-RLqwDuI44BsNAEOBxoCdJ3jQhXUb8yL5r65QXhnPLxVYO7mtYH86UBxUd2K5StzqRhK2Af08/gCs9R8Go+8bfA==}
 
   astro@4.2.6:
     resolution: {integrity: sha512-k5i8pEI2r45JTkoE0I4JyhOH/dZFpjUA4AONbRd9Gr1LtnGOhKHDftiYOrRLUGx91q7BzoW3DOk+h4yZM4yC3g==}
@@ -7330,9 +7334,9 @@ packages:
   fast-json-stable-stringify@2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
 
-  fast-jwt@3.1.1:
-    resolution: {integrity: sha512-c6gqmiMU9kUIMs0XcsnnpBMA4A+zi/XULA47r6hYoLR7s1teJ+LwviwZdttCeTZ+F5ZuHlRigNe98C4qN6h4pw==}
-    engines: {node: '>=14 <22'}
+  fast-jwt@5.0.2:
+    resolution: {integrity: sha512-b2z/32MTWyURskK8plXXkbLuZU3F+T79iFaVLYZEveF5lOwUj6g8wg2T7zIi6/xTbbv4BRQzm/lgH2jL3vSPgA==}
+    engines: {node: '>=20'}
 
   fast-querystring@1.1.1:
     resolution: {integrity: sha512-qR2r+e3HvhEFmpdHMv//U8FnFlnYjaC6QKDuaXALDkw2kvHO8WDjxH+f/rHGR4Me4pnk8p9JAkRNTjYHAKRn2Q==}
@@ -20223,6 +20227,8 @@ snapshots:
 
   '@leichtgewicht/ip-codec@2.0.4': {}
 
+  '@lukeed/ms@2.0.2': {}
+
   '@manypkg/find-root@1.1.0':
     dependencies:
       '@babel/runtime': 7.21.0
@@ -22885,7 +22891,7 @@ snapshots:
 
   astral-regex@2.0.0: {}
 
-  astro-sst@2.44.1:
+  astro-sst@2.45.1:
     dependencies:
       '@astrojs/webapi': 3.0.0
       set-cookie-parser: 2.6.0
@@ -25339,8 +25345,9 @@ snapshots:
 
   fast-json-stable-stringify@2.1.0: {}
 
-  fast-jwt@3.1.1:
+  fast-jwt@5.0.2:
     dependencies:
+      '@lukeed/ms': 2.0.2
       asn1.js: 5.4.1
       ecdsa-sig-formatter: 1.0.11
       mnemonist: 0.39.5
